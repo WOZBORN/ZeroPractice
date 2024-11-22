@@ -1,16 +1,11 @@
-# This is a sample Python script.
+def count_words_in_file(filename):
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            text = file.read()
+            # Разделяем текст на слова
+            words = text.split()
+            return len(words)
+    except FileNotFoundError:
+        print(f"Файл '{filename}' не найден.")
+        return 0
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
