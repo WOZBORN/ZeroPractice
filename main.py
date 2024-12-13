@@ -4,8 +4,6 @@ import pygame
 import sys
 import random
 from player import Player
-from bullet import Bullet
-from enemy import Enemy
 from asteroid import Asteroid
 from enemyship import EnemyShip
 from constants import WIDTH, HEIGHT, FPS
